@@ -15,17 +15,3 @@ install:
 
 script: html5validator --root _build/
 
-This is an example for Java project:
-
-language: java
-jdk:
- - oraclejdk8  # vnu.jar requires Java 8
-
-branches:
-  only:
-    - gh-pages
-
-install:
- - pip install --user html5validator
-
-script: html5validator --root _build/
