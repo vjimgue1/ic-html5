@@ -18,5 +18,6 @@ script: html5validator --root _build/
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: 7a4df2744ab3fd548bd001321a9502788a0689d3 # Set in travis-ci.org dashboard
-  
+  github_token: 7a4df2744ab3fd548bd001321a9502788a0689d3
+  on:
+      branch: gh-pages
