@@ -1,6 +1,11 @@
-# html5-travis
-[![Build Status](https://travis-ci.org/josedom24/html5-travis.svg?branch=master)](https://travis-ci.org/josedom24/html5-travis)
+# Integración continúa: Comprobación de html5 válido y Despliegue en surge.sh 
 
-Integración continúa html5
+[![Build Status](https://travis-ci.org/josedom24/ic-travis-html5.svg?branch=master)](https://travis-ci.org/josedom24/ic-travis-html5)
 
-https://github.com/svenkreiss/html5validator
+
+Integración continúa con travis que realiza dos operaciones:
+
+* test: Comprueba que el html5 es válido. Para ello vamos a utilizar (https://github.com/svenkreiss/html5validator)
+* deploy: Si la prueba ha sido exitosa se sube al servicio surge.sh (http://surge.sh/)
+
+
