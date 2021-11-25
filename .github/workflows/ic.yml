@@ -16,4 +16,4 @@ jobs:
     - name: Install surge
       run: npm install -g surge
     - name: Deploy to josedom24@surge.sh
-      run: surge ./build josedom24.github.sh --token ${{ secrets.SURGE_TOKEN }}   
+      run: surge ./build/ josedom24.github.sh --token ${{ secrets.SURGE_TOKEN }}   
