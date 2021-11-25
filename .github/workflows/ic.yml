@@ -9,10 +9,11 @@ jobs:
       run: sudo  pip install html5validator
     - name: Test html5
       run: html5validator --root _build/
-    - name: Install surge and fire deployment
+    - name: Install node
       uses: actions/setup-node@v1
       with:
         node-version: 8
+    - name: Install surge
       run: npm install -g surge
     - name: Deploy to josedom24@surge.sh
       run: surge ./build josedom24.github.sh --token ${{ secrets.SURGE_TOKEN }}   
