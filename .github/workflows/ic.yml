@@ -8,11 +8,11 @@ jobs:
     - name: pip
       run: sudo  pip install html5validator
     - name: test
-      run: echo ${{ secrets.surge_login }}
+      run: echo ${{ secrets.SURGE_LOGIN }}
     - name: Deploy to josedom24@surge.sh
       uses: dswistowski/surge-sh-action@v1
       with:
         domain: 'josedom24@surge.sh'
         project: './_build/'
-        login: ${{ secrets.surge_login }}
-        token: ${{ secrets.surge_token }}    
+        login: ${{ secrets.SURGE_LOGIN }}
+        token: ${{ secrets.SURGE_TOKEN }}    
