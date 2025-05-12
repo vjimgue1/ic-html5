@@ -63,7 +63,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    sh 'surge ./_build/ javierasping.surge.sh --token $TOKEN'
+                    sh 'surge ./_build/ vjimgue.surge.sh --token $TOKEN'
                 }
             }
         }
